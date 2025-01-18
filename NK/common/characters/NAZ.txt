@@ -1,0 +1,117 @@
+characters = {
+    NAZ_adolf_hitler = {
+	    name = "hitler"
+		portraits = {
+		    civilian = {
+			    large = "GFX_portrait_adolf"
+			}
+			army = {
+				large = GFX_portrait_adolf_army
+			}
+		}
+		country_leader = {
+		    ideology = nazism
+			expire="1965.1.1.1"
+			id = -1
+			traits = {
+			german_orator
+			}
+		}
+		field_marshal = { 
+			traits = { old_guard thorough_planner organisational_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+			has_country_flag = hitler_field_marshal_tt
+			}
+		}
+	}
+
+	NAZ_erich_ludenfort = {
+		name = "ludendorw"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_erich_ludenfort"
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard organizer brilliant_strategist }
+			skill=5
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+    }		
+	
+	NAZ_erms_rehm = {
+		name = "reehm"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_erms_rehm"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	NAZ_hermann_goering = {
+		name = "goring"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_hermann_goering"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	NAZ_rudolf_hess = {
+		name = "hess"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "GFX_portrait_rudolf_hess"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		country_leader = {
+		    ideology = nazism
+			expire="1965.1.1.1"
+			id = -1
+		  }
+		}
+	}
+	
+}

@@ -1,0 +1,18 @@
+characters = {
+    GER_gustav_stresemann = {
+	    name = "gustavstresemann"
+		portraits = {
+		    civilian = {
+			    large = "GFX_portrait_stresemann"
+			}
+		}
+		country_leader = {
+		    ideology = liberalism
+			expire="1965.1.1.1"
+			id = -1
+			traits = {
+			greate_traider
+			}
+		}
+	}
+}

@@ -1,0 +1,233 @@
+NAZ_division_categories = {
+
+	NAZ_division = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 70
+		is_good = no
+		available = { 
+		985 = {
+		is_owned_by = NAZ
+		  }
+		}
+		remove_effect = {
+		add_manpower = 1000
+		985 = {
+	    create_unit = {
+	    division = "division_template =\"SS-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	    owner = ROOT
+        location = 708
+	    count = 1
+		 }
+		}
+	  }
+	}
+	NAZ_division_1 = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 70
+		is_good = no
+		available = { 
+		986 = {
+		is_owned_by = NAZ
+		  }
+		}
+		remove_effect = {
+		add_manpower = 1000
+		986 = {
+	    create_unit = {
+	    division = "division_template =\"SS-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	    owner = ROOT
+        location = 9515
+	    count = 1
+		 }
+		}
+	  }
+	}
+	NAZ_division_2 = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_for_hitler
+		}
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 70
+		is_good = no
+		available = { 
+		987 = {
+		is_owned_by = NAZ
+		  }
+		}
+		remove_effect = {
+		add_manpower = 1000
+		987 = {
+	    create_unit = {
+	    division = "division_template =\"SS-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	    owner = ROOT
+        location = 11544
+	    count = 1
+		 }
+		}
+	  }
+	}
+	NAZ_division_bavaria = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_rignt_bavaria
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_rignt_bavaria
+		}
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 70
+		is_good = no
+		available = { 
+		}
+		remove_effect = {
+        division_template = {
+	    name = "Normal-Division"
+
+	    division_names_group = NAZ_Inf_02
+
+	    regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	
+	    support = {
+        engineer = { x = 0 y = 0 }
+	   }
+    }
+    random_core_state = {
+    limit = {
+        is_fully_controlled_by = ROOT
+    }
+	create_unit = {
+	division = "division_template =\"Infanterie-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	owner = ROOT
+    location = 692 
+	count = 1
+		 }
+	create_unit = {
+	division = "division_template =\"Infanterie-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	owner = ROOT
+    location = 692 
+	count = 1
+		 }
+       }
+	  }
+	}
+}
+NAZ_equipment_categories = {
+	NAZ_equipment_decision = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		cost = 100
+		days_remove = 40
+		is_good = no
+		available = { 
+		ITA = {
+		has_government = fascism
+		  }
+		}
+		remove_effect = {
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 1000
+        producer = NAZ
+         }
+	  }
+	}
+	NAZ_arteliria_decision = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		cost = 70
+		days_remove = 40
+		is_good = no
+		available = { 
+		ITA = {
+		has_government = fascism
+		  }
+		}
+		remove_effect = {
+        add_equipment_to_stockpile = {
+        type = artillery_equipment
+        amount = 300
+        producer = NAZ
+         }
+	  }
+	}
+	NAZ_osnasenia_decision = {
+		icon = GFX_decision_revolt 
+		allowed = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		visible = {
+		original_tag = NAZ
+		has_completed_focus = NAZ_mussolini
+		}
+		cost = 70
+		days_remove = 40
+		is_good = no
+		available = { 
+		ITA = {
+		has_government = fascism
+		  }
+		}
+		remove_effect = {
+        add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 500
+        producer = NAZ
+         }
+	  }
+	}
+  }

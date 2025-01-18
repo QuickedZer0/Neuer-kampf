@@ -1,0 +1,17 @@
+characters = {
+    SAR_victor_ro = {
+	    name = "viktor"
+		portraits = {
+		    civilian = {
+			    large = "GFX_portrait_victor_ro"
+			}
+		}
+		country_leader = {
+		    ideology = conservatism
+			expire="1965.1.1.1"
+			id = -1
+			traits = {
+			}
+		}
+	}
+}

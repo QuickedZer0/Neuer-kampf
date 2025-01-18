@@ -1,0 +1,26 @@
+NAZ_division_categories = {
+	allowed = {
+	original_tag = NAZ
+	}
+	priority = {
+		base = 10
+	}
+	visible = {
+	has_completed_focus = NAZ_for_hitler
+	original_tag = NAZ
+	}
+	visible_when_empty = yes 
+}
+NAZ_equipment_categories = {
+	allowed = {
+	original_tag = NAZ
+	}
+	priority = {
+		base = 10
+	}
+	visible = {
+	original_tag = NAZ
+	has_completed_focus = NAZ_mussolini
+	}
+	visible_when_empty = yes 
+}

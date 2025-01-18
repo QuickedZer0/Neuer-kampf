@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = {
+	    name = "GFX_portrait_adolf"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_Hilt.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_stresemann"
+		texturefile = "gfx/leaders/GER/Portrait_GER_stresemann.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_erich_ludenfort"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_erich_ludenfort.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_erms_rehm"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_ernst_rehm.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_hermann_goering"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_hermann_goering.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_rudolf_hess"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_rudolf_hess.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_victor_ro"
+		texturefile = "gfx/leaders/SAR/Portrait_SAR_victor_ro.dds"
+	}
+	spriteType = {
+	    name = "GFX_portrait_adolf_army"
+		texturefile = "gfx/leaders/NAZ/Portrait_NAZ_hitler_army.dds"
+	}
+}

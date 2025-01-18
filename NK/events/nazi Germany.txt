@@ -1,0 +1,43 @@
+add_namespace = hitler_event
+
+country_event = {
+	id = hitler_event.1
+	title = hitler_event.1.t
+	desc = hitler_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = hitler_event.1.a
+		custom_effect_tooltip = warning_tt
+		set_country_flag = hitler_field_marshal_tt
+		hidden_effect = {
+		country_event = {
+		id = hitler_event.2
+		days = 14
+		}
+	  }
+	}
+	option = { 
+		name = hitler_event.1.b
+		custom_effect_tooltip = warning_tt
+	}
+}
+country_event = {
+	id = hitler_event.2
+	title = hitler_event.2.t
+	desc = hitler_event.2.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = hitler_event.2.a
+		hidden_effect = {
+        NAZ_adolf_hitler = { 
+		retire = yes
+		}
+	}
+		add_stability = -0.2
+		add_war_support = -0.1
+	}
+}

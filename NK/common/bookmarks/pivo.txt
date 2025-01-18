@@ -1,0 +1,49 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1923.11.10.6
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"NAZ"={
+			history = "NAZ"
+			ideology = 
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+
+			}
+			focuses = {
+	
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

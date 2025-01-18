@@ -1,0 +1,27 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		11531 
+	}
+	state_category = town
+	history = {
+
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = GER
+
+		victory_points = {
+			11531 10 
+		}
+
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+	manpower=123900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,18 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "GFX_focus_NAZ_Munich"
+	texturefile = "gfx/interface/goals/focus_NAZ_Munich.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_NAZ_fur_firer"
+	texturefile = "gfx/interface/goals/focus_NAZ_fur_firer.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_NAZ_musolini"
+	texturefile = "gfx/interface/goals/focus_NAZ_musolini.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_NAZ_bavaria"
+	texturefile = "gfx/interface/goals/focus_NAZ_bavaria.dds"			
+	}		
+}

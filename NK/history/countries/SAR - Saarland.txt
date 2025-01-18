@@ -1,0 +1,29 @@
+capital = 938
+
+oob = "SAR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+}
+
+
+set_convoys = 10
+set_war_support = 0.5
+set_stability = 0.5
+
+recruit_character = SAR_victor_ro
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1920.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 55
+	fascism = 15
+	communism = 5
+	neutrality = 25
+}

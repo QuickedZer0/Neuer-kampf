@@ -1,0 +1,21 @@
+state={
+	id=986
+	name="STATE_986"
+	provinces={
+		9515 
+	}
+	state_category = town
+	history = {
+
+		owner = GER
+		add_core_of = GER
+		add_core_of = BAY
+
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=59000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

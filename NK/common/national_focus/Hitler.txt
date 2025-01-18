@@ -1,0 +1,265 @@
+focus_tree = {
+	id = germany_hitler_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NAZ
+		}
+
+	}	
+	default = no	
+	focus = {
+		id = NAZ_Munich
+		x = 10
+		y = 0
+		icon = GFX_focus_NAZ_Munich
+		cost = 1
+		completion_reward = {
+        division_template = {
+	    name = "Infanterie-Division"
+
+	    division_names_group = GER_Inf_01
+
+	    regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	    support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	   }
+    }
+    random_core_state = {
+    limit = {
+        is_fully_controlled_by = ROOT
+    }
+	create_unit = {
+	division = "division_template =\"Infanterie-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	owner = ROOT
+    location = 692 
+	count = 1
+		}
+    }
+  }
+}
+	focus = {
+		id = NAZ_for_hitler
+		icon = GFX_focus_NAZ_fur_firer
+		x = 0
+		y = 1
+		relative_position_id = NAZ_Munich
+		prerequisite = { focus = NAZ_Munich }
+		cost = 10
+		completion_reward = {
+		add_manpower = 1000
+		custom_effect_tooltip = new_division_NAZ_tt
+		}
+	}
+	focus = {
+		id = NAZ_commanden
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = NAZ_for_hitler
+		prerequisite = { focus = NAZ_for_hitler }
+		cost = 10
+		completion_reward = {
+		country_event = {
+		id = hitler_event.1
+		days = 1
+		  }
+		}
+	}
+	focus = {
+		id = NAZ_ludendorv
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = NAZ_commanden
+		prerequisite = { focus = NAZ_commanden }
+		cost = 10
+		completion_reward = {
+		add_manpower = 3000
+        random_core_state = {
+        limit = {
+        is_fully_controlled_by = ROOT
+        }
+	    create_unit = {
+	    division = "division_template =\"Infanterie-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	    owner = ROOT
+        location = 692 
+	    count = 1
+		   }
+	    create_unit = {
+	    division = "division_template =\"Infanterie-Division\" start_experience_factor = 0.2 start_equipment_factor = 0.4"
+	    owner = ROOT
+        location = 692 
+	    count = 1
+		   }
+         }
+		}
+	}
+	focus = {
+		id = NAZ_mussolini
+		icon = GFX_focus_NAZ_musolini
+		x = 2
+		y = 1
+		relative_position_id = NAZ_for_hitler
+		prerequisite = { focus = NAZ_for_hitler }
+		cost = 10
+		completion_reward = {
+		custom_effect_tooltip = new_equipment_NAZ_tt
+		}
+	}
+	focus = {
+		id = NAZ_scroni
+		icon = GFX_focus_focus_fra_maquis
+		x = 3
+		y = 2
+		relative_position_id = NAZ_for_hitler
+		prerequisite = { focus = NAZ_for_hitler }
+		cost = 10
+		completion_reward = {
+        add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 2000
+        producer = NAZ
+          }
+        add_equipment_to_stockpile = {
+        type = support_equipment
+        amount = 70
+        producer = NAZ
+          }
+        add_equipment_to_stockpile = {
+        type = artillery_equipment
+        amount = 30
+        producer = NAZ
+          }
+		}
+	}
+	focus = {
+		id = NAZ_bavaria
+		icon = GFX_focus_NAZ_bavaria
+		x = 0
+		y = 2
+		relative_position_id = NAZ_for_hitler
+		prerequisite = { focus = NAZ_for_hitler }
+		cost = 10
+		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		add_ideas = hitler_bavaria
+		}
+	}
+	focus = {
+		id = NAZ_suppotion
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = NAZ_bavaria
+		prerequisite = { focus = NAZ_bavaria }
+		cost = 10
+		completion_reward = {
+		983 = {
+		add_building_construction = {
+		type = industrial_complex
+		level = 4
+		instant_build = yes
+			}
+		}
+	  }
+	}
+	focus = {
+		id = NAZ_rignt_bavaria
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = NAZ_bavaria
+		prerequisite = { focus = NAZ_bavaria }
+		cost = 10
+		completion_reward = {
+		custom_effect_tooltip = nazi_bavaria_tt
+		}
+	}
+	focus = {
+		id = NAZ_now_people
+		icon = GFX_
+		x = 0
+		y = 2
+		relative_position_id = NAZ_bavaria
+		prerequisite = { focus = NAZ_bavaria }
+		cost = 10
+		completion_reward = {
+		add_manpower = 10000
+		add_stability = 0.1
+		}
+	}
+	focus = {
+		id = NAZ_triymg_of_war
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = NAZ_now_people
+		prerequisite = { focus = NAZ_now_people }
+		cost = 10
+		completion_reward = {
+		add_ideas = NAZ_triymg_of_war_idea
+		}
+	}
+	focus = {
+		id = NAZ_war_indystri
+		x = 17
+		y = 0
+		available = {
+		has_completed_focus = NAZ_suppotion
+		}
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		completion_reward = {
+		983 = {
+		add_building_construction = {
+		type = arms_factory 
+		level = 3
+		instant_build = yes
+			}
+		}
+		}
+	}
+	focus = {
+		id = NAZ_proisvondvo
+		x = -2
+		y = 1
+		icon = GFX_
+		cost = 10
+		relative_position_id = NAZ_war_indystri
+		prerequisite = { focus = NAZ_war_indystri }
+		completion_reward = {
+		add_ideas = NAZ_ss_propaganda
+		add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = NAZ_radio_propaganda
+		x = 2
+		y = 1
+		icon = GFX_
+		cost = 10
+		relative_position_id = NAZ_war_indystri
+		prerequisite = { focus = NAZ_war_indystri }
+		completion_reward = {
+		add_political_power = 50
+		add_ideas = NAZ_propaganda
+		}
+	}
